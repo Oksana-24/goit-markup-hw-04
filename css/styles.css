@@ -7,6 +7,7 @@
     --background-color-header-and-footer:#2F303A;
     --blue-color:#2196F3;
     --white-color:#FFFFFF;
+    --gray-color:#AFB1B8;
 }
 
 body{
@@ -123,10 +124,12 @@ color: var(--blue-color);
     gap: 50px;
 }
 .auth-nav .link{
-    display: block;
+    display: flex;
+    align-items: center;
     padding-top: 32px;
     padding-bottom: 32px;
     color: var(--secondary-color);
+    fill: currentColor;
     font-weight: 500;
     font-size: 14px;
     line-height: 1.14;
@@ -141,8 +144,8 @@ color: var(--blue-color);
     display: inline-block;
 }
 
-.auth-nav .link :hover,
-.auth-nav .link:focus {
+.contact-link:hover,
+.contact-link:focus {
     color: var(--blue-color);
 }
 
@@ -151,7 +154,8 @@ color: var(--blue-color);
     padding-top: 200px;
     padding-bottom: 200px;
     max-width: 1600px;
-
+    margin-left: auto;
+    margin-right: auto;
     background-color: var(--background-color-header-and-footer);
     background-image:linear-gradient(to right,rgba(47, 48, 58, 0.4),rgba(47, 48, 58, 0.4)), url(../images/main-photo.jpg);
     background-repeat: no-repeat;
@@ -237,6 +241,8 @@ color: var(--blue-color);
 
 .features-svg {
     display: flex;
+    align-items: center;
+    justify-content: center;
     margin-bottom: 30px;
     background: #F5F4FA;
     border-radius: 4px;
@@ -246,7 +252,6 @@ color: var(--blue-color);
 
 .features-icons {
     display: flex;
-    margin: auto;
 }
 /* ДІЯЛЬНІСТЬ */
 
@@ -324,11 +329,19 @@ color: var(--blue-color);
     border-radius: 50%;
     width: 44px;
     height: 44px;
+
 }
 
-.team-href-svg:hover {
+.team-link {
+    fill: var(--gray-color);
+    width: 20px;
+    height: 20px;
+
+}
+.team-link:hover {
     background-color: var(--blue-color);
     fill: var(--white-color);
+ 
 }
 /* Постійні клієнти */
 
@@ -345,14 +358,23 @@ color: var(--blue-color);
     gap: 30px;
 }
 
-.customers-list {
+
+.customers-link {
     display: flex;
     align-items: center;
     justify-content: center;
+    border: 1px solid var(--gray-color);
+    border-radius: 4px;
     width: 170px;
     height: 92px;
-    border: 1px solid #AFB1B8;
-    border-radius: 4px;
+    fill: var(--gray-color);
+
+}
+
+.customers-link:hover,
+.customers-link:focus {
+    fill: var(--blue-color);
+    border-radius: var(--blue-color);
 }
 
 /* footer */
@@ -416,6 +438,7 @@ color: var(--blue-color);
 
 .cont {
     display: flex;
+    align-items: baseline;
 }
 .footer-box-join {
     display: block;
