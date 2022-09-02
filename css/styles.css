@@ -326,7 +326,7 @@ color: var(--blue-color);
     display: flex;
     justify-content: center;
     align-items: center;
-    border-radius: 50%;
+    /* border-radius: 50%; */
     width: 44px;
     height: 44px;
 
@@ -336,12 +336,11 @@ color: var(--blue-color);
     fill: var(--gray-color);
     width: 20px;
     height: 20px;
-
+    border-radius: 50%;
 }
 .team-link:hover {
     background-color: var(--blue-color);
     fill: var(--white-color);
- 
 }
 /* Постійні клієнти */
 
@@ -375,6 +374,8 @@ color: var(--blue-color);
 .customers-link:focus {
     fill: var(--blue-color);
     border-radius: var(--blue-color);
+    border: 1px solid #2196F3;
+    border-radius: 4px;
 }
 
 /* footer */
