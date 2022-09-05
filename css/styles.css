@@ -283,6 +283,7 @@ color: var(--blue-color);
     text-align: center;
 }
 .position {
+    padding-bottom: 16px;
     color: var(--secondary-color);
     font-weight: 400;
     font-size: 16px;
@@ -291,13 +292,17 @@ color: var(--blue-color);
 }
 
 .team-title {
-    margin-top: 30px;
+    /* margin-top: 30px; */
     margin-bottom: 10px;
     color: var(--primary-color);
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
     text-align: center;
+}
+
+.team-box {
+    padding: 30px;
 }
 
 .list-team {
@@ -311,12 +316,6 @@ color: var(--blue-color);
     border-radius: 0px 0px 4px 4px;
 }
 
-.social-link {
-    display: flex;
-    justify-content: center;
-    margin-top: 16px;
-    margin-bottom: 30px;
-}
 .team-list-svg {
     display: flex;
     gap: 10px;
@@ -336,7 +335,8 @@ color: var(--blue-color);
     height: 100%;
     fill: var(--gray-color);
 }
-.team-link:hover {
+.team-link:hover, 
+.team-link:focus {
     background-color: var(--blue-color);
     fill: var(--white-color);
 }
@@ -485,15 +485,12 @@ color: var(--blue-color);
     border-radius: 4px;
 }
 
-.button-portfolio.button-portfolio:hover,
-.button-portfolio.button-portfolio:focus {
+.button-portfolio:hover,
+.button-portfolio:focus {
     background-color: var(--blue-color);
     color: var(--white-color);
-    
-}
-.button-portfolio-linlk:hover,
-.button-portfolio-linlk:focus {
     box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+    
 }
 
 .box-images {
@@ -509,7 +506,7 @@ color: var(--blue-color);
 }
 
 .link-images-portfolio:hover,
-.kink-images-portfolio:hover {
+.link-images-portfolio:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
 
